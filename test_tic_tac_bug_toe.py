@@ -17,3 +17,9 @@ class TestTicTac(unittest.TestCase):
                  ['O', 'O', ' '],
                  [' ', ' ', ' ']]
         self.assertTrue(tic_tac_bug_toe.is_win(board, "X"))
+
+    def test_check_win_O(self):
+        board = [['X', ' ', 'X'],
+                 ['O', 'O', 'O'],
+                 [' ', ' ', ' ']]
+        self.assertTrue(tic_tac_bug_toe.is_win(board, "O"))
