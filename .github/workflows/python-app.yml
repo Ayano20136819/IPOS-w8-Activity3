@@ -36,7 +36,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Measuring code coverage
       run: |
-          coverage run -m unittest discover tests
+          coverage run -m unittest discover
           coverage report -m
 
     - name: Upload code coverage results.
